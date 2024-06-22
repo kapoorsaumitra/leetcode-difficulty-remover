@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "LeetCode Difficulty Remover",
+    "version": "1.0",
+    "description": "Removes difficulty indicators from LeetCode problems.",
+    "permissions": [
+      "https://leetcode.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://leetcode.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
